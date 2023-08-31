@@ -45,7 +45,7 @@ end
 private
 
 def user_params
-    params.require(:user).permit(:title, :body, :image, :name, :introduction)
+    params.require(:user).permit( :profile_image, :name, :introduction)
 end
 
   def is_matching_login_user
